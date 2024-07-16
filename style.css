@@ -1,6 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav {
+  background: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 50px;
+  padding: 30px;
+}
+
+.header-logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 180px;
+}
+
+.nav a {
+  color: #f9faf8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #3882f6;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: 195px;
+}
+
+.nav ul li {
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.header-logo img {
+    height: 28px;
+    width: auto;
+    fill: #f9faf8;
+}
+
+/* Main */
+
+.main {
+  background: url(Assets/circle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 400px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 24px;
+  gap: 20px;
+  border-radius: 24px;
+}
+
+.hero-title {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-desc {
+  color: #f9faf8;
+  font-size: 18px;
+}
+
+
+.main-image img {
+  height: 230px;
+  border-radius: 24px;
+}
+
+button {
+  background: #3882f6;
+  border-radius: 16px;
+  color: #f9faf8;
+  font-weight: 600;
+  font-size: 16px;
+  border: 3px solid #f9faf8;
+  width: 100px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Information */
+
+.information {
+  display: flex;
+  height: 420px;
+  background: #f9faf8;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.info-card-container {
+  display: flex;
+  gap: 50px;
+}
+
+.info-card {
+  height: 180px;
+  width: 180px;
+  border-radius: 24px;
+  border: 4px solid #3882f6;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  text-align: center;
+  gap: 10px;
+}
+
+.info-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-subtext {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+/* Quote Section */
